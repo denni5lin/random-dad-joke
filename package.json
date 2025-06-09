@@ -1,0 +1,26 @@
+{
+  "name": "random-dad-joke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denni5lin/random-dad-joke.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/denni5lin/random-dad-joke/issues"
+  },
+  "homepage": "https://github.com/denni5lin/random-dad-joke#readme",
+  "devDependencies": {
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
