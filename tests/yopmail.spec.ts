@@ -25,18 +25,18 @@ async function main() {
   await page.locator('#newmail').click();
 
   // 5. Switch to the compose iframe
-  const composeFrame = page.frameLocator('iframe#ifcompose');
+  const composeFrame = page.frameLocator('iframe#ifmail');
 
   // 6. Compose and send email
-  await composeFrame.locator('#msgto').fill('contactus@chegg.com');
-  await composeFrame.locator('#msgsubject').fill('Hello from Playwright!');
-  await composeFrame.locator('#msgbody').fill('Hello World');
+  await composeFrame.locator('#msgto').fill(`${randomEmail}@yopmail.com`);
+  await composeFrame.locator('#msgsubject').fill('Hello from Nigeria!');
+  await composeFrame.locator('#msgbody').fill('I am your Nigerian prince, please send me your bank details.');
 
   // Click Send
   await composeFrame.locator('#msgsend').click();
 
   console.log(`Email sent from: ${randomEmail}@yopmail.com`);
-  await page.waitForTimeout(3000); // wait to observe result
+  await page.waitForTimeout(5000); // wait to observe result
   await browser.close();
 }
 
