@@ -21,7 +21,7 @@ This repository automates the process of fetching a random dad joke from [icanha
 npm install
 ```
 
-### Running the Test
+## Running the Test
 
 The main script is located at `tests/yopmail.spec.ts`. To run it:
 
@@ -31,7 +31,7 @@ npx ts-node tests/yopmail.spec.ts
 
 This will launch a browser window, fetch a dad joke, and send it to a random Yopmail inbox. The browser will close automatically after a short delay.
 
-### Troubleshooting
+## Troubleshooting
 
 - **Playwright not installed:**
 Make sure you have run `npm install` to install all dependencies.
